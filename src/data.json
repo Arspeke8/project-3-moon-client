@@ -3,4 +3,6 @@ export const fitnessData = [{
     set: 4,
     reps: 3,
     exercise: "curls",
+    date: 
+    
 }]
