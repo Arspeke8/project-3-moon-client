@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="R-vYNGDxhKF5BctZFVCK">
-        <mxGraphModel dx="1239" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2974" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -19,7 +19,7 @@
                 <mxCell id="vnXqLF_RoWk1uh71GDRZ-15" value="welcome user" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="500" y="40" width="300" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="vnXqLF_RoWk1uh71GDRZ-16" value="login" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="vnXqLF_RoWk1uh71GDRZ-16" value="login&lt;br&gt;&lt;br&gt;need login page*" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="140" y="160" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="vnXqLF_RoWk1uh71GDRZ-17" value="create account" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -47,12 +47,12 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="vnXqLF_RoWk1uh71GDRZ-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry y="560" width="400" height="480" as="geometry"/>
+                    <mxGeometry y="570" width="400" height="480" as="geometry"/>
                 </mxCell>
                 <mxCell id="vnXqLF_RoWk1uh71GDRZ-31" value="workout name" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="105" y="580" width="190" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="vnXqLF_RoWk1uh71GDRZ-32" value="body group" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="vnXqLF_RoWk1uh71GDRZ-32" value="Date" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="140" y="610" width="120" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="vnXqLF_RoWk1uh71GDRZ-33" value="exercise 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -127,7 +127,7 @@
                 <mxCell id="vnXqLF_RoWk1uh71GDRZ-55" value="history" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="560" y="580" width="140" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="vnXqLF_RoWk1uh71GDRZ-56" value="select workout" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="vnXqLF_RoWk1uh71GDRZ-56" value="select workout&lt;br&gt;&lt;br&gt;dropdown" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="570" y="620" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="vnXqLF_RoWk1uh71GDRZ-58" value="exercise&lt;br&gt;weight&lt;br&gt;set reps&lt;br&gt;&lt;br&gt;exercise&lt;br&gt;weight&amp;nbsp;&lt;br&gt;set reps&lt;br&gt;&lt;br&gt;exercise&lt;br&gt;weight&lt;br&gt;set reps&lt;br&gt;&lt;br&gt;exercise&lt;br&gt;weight&lt;br&gt;set reps" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">

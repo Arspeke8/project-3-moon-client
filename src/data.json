@@ -1,8 +1,0 @@
-export const fitnessData = [{
-    weight: 20, 
-    set: 4,
-    reps: 3,
-    exercise: "curls",
-    date: 
-    
-}]
