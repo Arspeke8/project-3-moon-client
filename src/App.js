@@ -1,3 +1,4 @@
+
 import logo from "./logo.svg";
 import "./App.css";
 import { Home } from "./pages/Home";
@@ -10,6 +11,7 @@ import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup";
 import { Navbar } from "./Components/Navbar";
 const Router = BrowserRouter;
+
 
 // const client = ApolloClient({
 //   uri:'https://my-server-url.heroku.com/graphql',

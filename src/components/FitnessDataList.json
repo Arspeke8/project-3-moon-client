@@ -1,0 +1,43 @@
+[
+  {
+    "name": "arms",
+    "date": "01-30-2023",
+    "exercises": [
+      {
+        "weight": 20,
+        "set": 4,
+        "reps": 3,
+        "exercise": "bicep curls",
+        "date": "01-30-2023"
+      },
+      {
+        "weight": 20,
+        "set": 4,
+        "reps": 3,
+        "exercise": "hammer curls",
+        "date": "01-30-2023"
+      }
+    ]
+  },
+  {
+    "name": "chest",
+    "date": "01-30-2023",
+    "exercises": [
+      {
+        "weight": 20,
+        "set": 4,
+        "reps": 3,
+        "exercise": "chest press",
+        "date": "01-30-2023"
+      },
+      {
+        "weight": 20,
+        "set": 4,
+        "reps": 3,
+        "exercise": "bench press",
+        "date": "01-30-2023"
+      },
+      { "weight": 20, "set": 4, "reps": 3, "exercise": "push up", "date": "01-30-2023" }
+    ]
+  }
+]
