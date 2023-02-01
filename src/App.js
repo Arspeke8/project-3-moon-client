@@ -10,6 +10,9 @@ import { Routes } from "react-router-dom";
 import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup";
 import { Navbar } from "./Components/Navbar";
+import FitnessHistory from "./Components/FitnessHistory";
+import WorkoutForm from "./Components/WorkoutForm";
+
 const Router = BrowserRouter;
 
 
@@ -30,6 +33,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         </Routes>
         <Footer />
+        <WorkoutForm/>
+        <FitnessHistory/>
       </Router>
     </div>
   );
