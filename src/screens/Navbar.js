@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/Logo.png';
 import { Stack } from '@mui/material';
@@ -39,13 +39,13 @@ export const Navbar = () => (
           borderBottom: '3px solid #FF2625',
         }}
       >
-        Home
+        <Home/>
       </Link>
       <Link to='signup' style={{ textDecoration: 'none', color: '#3A1212' }}>
-        Signup
+        <Signup/>
       </Link>
       <Link to='login' style={{ textDecoration: 'none', color: '#3A1212' }}>
-        Login
+        <Login/>
       </Link>
     </Stack>
   </Stack>
