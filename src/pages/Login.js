@@ -27,7 +27,7 @@ export const Login = () => {
   };
   return (
     <div id="login">
-      <form className="login-page bg-light" onSubmit={onSubmit}>
+      <div className="login-page bg-light" onSubmit={onSubmit}>
         <div className="container">
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
@@ -108,7 +108,7 @@ export const Login = () => {
             </div>
           </div>
         </div>
-      </form>
+      </div>
 
      
         

@@ -10,20 +10,26 @@ import { Signup } from './pages/Signup';
 import { Navbar } from './screens/Navbar';
 import FitnessHistory from './screens/FitnessHistory';
 import WorkoutForm from './screens/WorkoutForm';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+} from "@apollo/client";
 
 const Router = BrowserRouter;
 
-// const client = ApolloClient({
-//   uri:'https://my-server-url.heroku.com/graphql',
-//   cache: new InMemoryCache(),
-// });
+const client = new ApolloClient({
+  uri:'http://localhost:3002/graphql',
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
+    <ApolloProvider client={client}>
     <div className='App'>
       <Router>
-        <Header />
-        <Navbar />
+        <Header/>
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} />
@@ -34,6 +40,7 @@ function App() {
         <Footer />
       </Router>
     </div>
+    </ApolloProvider>
   );
 }
 
