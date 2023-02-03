@@ -1,9 +1,33 @@
+import { useState } from "react";
+import {useMutation} from "@apollo/client"
+import { LOGIN_USER } from "../utils/mutation";
+
 import "./Login.css";
 
 export const Login = () => {
+  const [user, setUser] = useState({ email: "", username: "", password: "" });
+  const [login]= useMutation(LOGIN_USER)
+  const onChange = (event) => {
+    setUser({ ...user, [event.target.name]: event.target.value });
+  };
+
+  const onSubmit =async (event) => {
+    event.preventDefault();
+    console.log(user);
+    if(!user.email||!user.username||!user.password){
+      return
+    }
+    try {
+      const result=await login({variables:user})
+      
+      
+    } catch (error) {
+      
+    }
+  };
   return (
     <div id="login">
-      <div className="login-page bg-light">
+      <form className="login-page bg-light" onSubmit={onSubmit}>
         <div className="container">
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
@@ -22,6 +46,7 @@ export const Login = () => {
                               <i className="bi bi-person-fill"></i>
                             </div>
                             <input
+                            onChange={onChange}
                               type="text"
                               className="form-control"
                               placeholder="Enter Username"
@@ -83,7 +108,7 @@ export const Login = () => {
             </div>
           </div>
         </div>
-      </div>
+      </form>
 
      
         

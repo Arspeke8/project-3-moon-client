@@ -31,10 +31,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="workoutform" element={<WorkoutForm />} />
+          <Route path="fitnesshistory" element={<FitnessHistory />} />
         </Routes>
         <Footer />
-        <WorkoutForm/>
-        <FitnessHistory/>
       </Router>
     </div>
   );
