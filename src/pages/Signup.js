@@ -26,53 +26,53 @@ export const Signup = () => {
   };
   return (
     <div id="signup">
-      <form class="well" onSubmit={onSubmit}>
-        <h3 class="signup">Sign up</h3>
-        <div class="input-group signup">
-          <span class="input-group-addon">
-            <i class="glyphicon glyphicon-user"></i>
+      <form className="well" onSubmit={onSubmit}>
+        <h3 className="signup">Sign up</h3>
+        <div className="input-group signup">
+          <span className="input-group-addon">
+            <i className="glyphicon glyphicon-user"></i>
           </span>
           <input
             onChange={onChange}
             id="email"
             type="text"
-            class="form-control"
+            className="form-control"
             name="email"
             value={user.email}
             placeholder="email"
           />
         </div>
-        <div class="input-group signup">
-          <span class="input-group-addon">
-            <i class="glyphicon glyphicon-user"></i>
+        <div className="input-group signup">
+          <span className="input-group-addon">
+            <i className="glyphicon glyphicon-user"></i>
           </span>
           <input
             onChange={onChange}
             id="username"
             type="text"
-            class="form-control"
+            className="form-control"
             name="username"
             value={user.username}
             placeholder="Username"
           />
         </div>
 
-        <div class="input-group signup">
-          <span class="input-group-addon">
-            <i class="glyphicon glyphicon-lock"></i>
+        <div className="input-group signup">
+          <span className="input-group-addon">
+            <i className="glyphicon glyphicon-lock"></i>
           </span>
           <input
             onChange={onChange}
             id="password"
             type="password"
-            class="form-control"
+            className="form-control"
             name="password"
             value={user.password}
             placeholder="Password"
           />
         </div>
 
-        <button type="submit" class="btn btn-primary signup" id="submit">
+        <button type="submit" className="btn btn-primary signup" id="submit">
           Signup
         </button>
       </form>
