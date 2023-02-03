@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Home } from './pages/Home';
 import { Header } from './screens/Header';
@@ -29,8 +28,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='workoutform' element={<WorkoutForm />} />
-          <Route path='fitnesshistory' element={<FitnessHistory />} />
+          {/* <Route path='workoutform' element={<WorkoutForm />} />
+          <Route path='fitnesshistory' element={<FitnessHistory />} /> */}
         </Routes>
         <Footer />
       </Router>
