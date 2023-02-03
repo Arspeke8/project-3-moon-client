@@ -5,7 +5,7 @@ import { LOGIN_USER } from "../utils/mutation";
 import "./Login.css";
 
 export const Login = () => {
-  const [user, setUser] = useState({ email: "", username: "", password: "" });
+  const [user, setUser] = useState({ username: "", password: "" });
   const [login]= useMutation(LOGIN_USER)
   const onChange = (event) => {
     setUser({ ...user, [event.target.name]: event.target.value });
@@ -14,7 +14,7 @@ export const Login = () => {
   const onSubmit =async (event) => {
     event.preventDefault();
     console.log(user);
-    if(!user.email||!user.username||!user.password){
+    if(!user.username||!user.password){
       return
     }
     try {
