@@ -6,7 +6,7 @@ import { Footer } from './screens/Footer';
 import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-import { Login } from './pages/Login';
+import  Login  from './pages/Login';
 import { Signup } from './pages/Signup';
 import { Navbar } from './screens/Navbar';
 // import FitnessHistory from './screens/FitnessHistory';
@@ -27,7 +27,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Login' element={<Login />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           {/* <Route path='workoutform' element={<WorkoutForm />} />
           <Route path='fitnesshistory' element={<FitnessHistory />} /> */}

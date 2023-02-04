@@ -1,44 +1,45 @@
-import { useState } from "react";
-import {useMutation} from "@apollo/client"
+import React from "react";
+// import { useState } from "react";
+// import {useMutation} from "@apollo/client"
 import "./Signup.css";
-import { ADD_USER } from "../utils/mutation";
+// import { ADD_USER } from "../utils/mutation";
 
 export const Signup = () => {
-  const [user, setUser] = useState({ email: "", username: "", password: "" });
-  const [signup]= useMutation(ADD_USER)
-  const onChange = (event) => {
-    setUser({ ...user, [event.target.name]: event.target.value });
-  };
+  // const [user, setUser] = useState({ email: "", username: "", password: "" });
+  // const [signup]= useMutation(ADD_USER)
+  // const onChange = (event) => {
+  //   setUser({ ...user, [event.target.name]: event.target.value });
+  // };
 
-  const onSubmit =async (event) => {
-    event.preventDefault();
-    console.log(user);
-    if(!user.email||!user.username||!user.password){
-      return
-    }
-    try {
-      const result=await signup({variables:user})
+  // const onSubmit =async (event) => {
+  //   event.preventDefault();
+  //   console.log(user);
+  //   if(!user.email||!user.username||!user.password){
+  //     return
+  //   }
+  //   try {
+  //     const result=await signup({variables:user})
 
       
-    } catch (error) {
+  //   } catch (error) {
       
-    }
-  };
+  //   }
+  // };
   return (
     <div id="signup">
-      <form className="well" onSubmit={onSubmit}>
+      <form className="well">
         <h3 className="signup">Sign up</h3>
         <div className="input-group signup">
           <span className="input-group-addon">
             <i className="glyphicon glyphicon-user"></i>
           </span>
           <input
-            onChange={onChange}
+           
             id="email"
             type="text"
             className="form-control"
             name="email"
-            value={user.email}
+           
             placeholder="email"
           />
         </div>
@@ -47,12 +48,12 @@ export const Signup = () => {
             <i className="glyphicon glyphicon-user"></i>
           </span>
           <input
-            onChange={onChange}
+          
             id="username"
             type="text"
             className="form-control"
             name="username"
-            value={user.username}
+            
             placeholder="Username"
           />
         </div>
@@ -62,12 +63,12 @@ export const Signup = () => {
             <i className="glyphicon glyphicon-lock"></i>
           </span>
           <input
-            onChange={onChange}
+           
             id="password"
             type="password"
             className="form-control"
             name="password"
-            value={user.password}
+           
             placeholder="Password"
           />
         </div>
