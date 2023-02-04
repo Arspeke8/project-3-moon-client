@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 import HeroBannerImage from '../assets/images/banner.jpg';
 
@@ -10,7 +10,6 @@ const Herobanner = () => (
       Exercise Should be Mandatory, <br />
       if You have a desk Job.
     </Typography>
-    
     <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" />
   </Box>
 );

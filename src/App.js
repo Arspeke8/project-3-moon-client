@@ -1,5 +1,6 @@
 import './App.css';
 import { Home } from './pages/Home';
+import './App.css';
 import { Header } from './screens/Header';
 import { Footer } from './screens/Footer';
 import { BrowserRouter } from 'react-router-dom';
@@ -8,39 +9,32 @@ import { Routes } from 'react-router-dom';
 import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import { Navbar } from './screens/Navbar';
-import FitnessHistory from './screens/FitnessHistory';
-import WorkoutForm from './screens/WorkoutForm';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-} from "@apollo/client";
+// import FitnessHistory from './screens/FitnessHistory';
+// import WorkoutForm from './screens/WorkoutForm';
 
 const Router = BrowserRouter;
 
-const client = new ApolloClient({
-  uri:'http://localhost:3002/graphql',
-  cache: new InMemoryCache(),
-});
+// const client = ApolloClient({
+//   uri:'https://my-server-url.heroku.com/graphql',
+//   cache: new InMemoryCache(),
+// });
 
 function App() {
   return (
-    <ApolloProvider client={client}>
     <div className='App'>
       <Router>
-        <Header/>
-        <Navbar/>
+        <Header />
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='workoutform' element={<WorkoutForm />} />
-          <Route path='fitnesshistory' element={<FitnessHistory />} />
+          {/* <Route path='workoutform' element={<WorkoutForm />} />
+          <Route path='fitnesshistory' element={<FitnessHistory />} /> */}
         </Routes>
         <Footer />
       </Router>
     </div>
-    </ApolloProvider>
   );
 }
 
