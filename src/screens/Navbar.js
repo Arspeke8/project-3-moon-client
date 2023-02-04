@@ -1,9 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Logo from "../assets/images/Logo.png";
-import { Stack } from "@mui/material";
-import { Home } from '../pages/Home';
-import { Login } from '../pages/Login.js';
+import react from 'react';
+import { Link } from 'react-router-dom';
+import Logo from '../assets/images/Logo.png';
+import { Stack } from '@mui/material';
+import { Login } from '../pages/Login';
 import { Signup } from '../pages/Signup';
 
 export const Navbar = () => (
@@ -41,12 +40,12 @@ export const Navbar = () => (
       >
         Home
       </Link>
-      <a href="#signup" style={{ textDecoration: "none", color: "#3A1212" }}>
+      <Link to='signup' style={{ textDecoration: 'none', color: '#3A1212' }}>
         Signup
-      </a>
-      <a href="#login" style={{ textDecoration: "none", color: "#3A1212" }}>
+      </Link>
+      <Link to='login' style={{ textDecoration: 'none', color: '#3A1212' }}>
         Login
-      </a>
+      </Link>
     </Stack>
   </Stack>
 );
