@@ -9,7 +9,9 @@ export const Home = () => {
     <Box>
       <Herobanner/>
       
+      
     </Box>
+    
   );
     }
 

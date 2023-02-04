@@ -8,8 +8,8 @@ import { Routes } from 'react-router-dom';
 import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import { Navbar } from './screens/Navbar';
-import FitnessHistory from './screens/FitnessHistory';
-import WorkoutForm from './screens/WorkoutForm';
+// import FitnessHistory from './screens/FitnessHistory';
+// import WorkoutForm from './screens/WorkoutForm';
 
 const Router = BrowserRouter;
 
@@ -28,8 +28,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='workoutform' element={<WorkoutForm />} />
-          <Route path='fitnesshistory' element={<FitnessHistory />} />
+          {/* <Route path='workoutform' element={<WorkoutForm />} />
+          <Route path='fitnesshistory' element={<FitnessHistory />} /> */}
         </Routes>
         <Footer />
       </Router>
