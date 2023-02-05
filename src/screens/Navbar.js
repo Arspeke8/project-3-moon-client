@@ -20,7 +20,7 @@ export const Navbar = () => (
       <img
         src={Logo}
         alt="logo"
-        style={{ width: "48px", height: "48px", margin: "0px 20px" }}
+        style={{ width: "100px", height: "100px", margin: "0px 20px", borderRadius: "30px"}}
       />
     </Link>
     <Stack
