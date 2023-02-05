@@ -1,30 +1,31 @@
 import { useState } from "react";
-// import {useMutation} from "@apollo/client"
-// import { LOGIN_USER } from "../utils/mutation";
+import {useMutation} from "@apollo/client"
+import { LOGIN_USER } from "../utils/mutation";
 
 import "./Login.css";
 
    const Login = () => {
-  // const [user, setUser] = useState({ username: "", password: "" });
-  // const [login]= useMutation(LOGIN_USER)
-  // const onChange = (event) => {
-  //   setUser({ ...user, [event.target.name]: event.target.value });
-  // };
+  const [user, setUser] = useState({ username: "", password: "" });
+  const [login]= useMutation(LOGIN_USER)
+  const onChange = (event) => {
+    console.log("changingstate")
+    setUser({ ...user, [event.target.name]: event.target.value });
+  };
 
-  // const onSubmit =async (event) => {
-  //   event.preventDefault();
-  //   console.log(user);
-  //   if(!user.username||!user.password){
-  //     return
-  //   }
-  //   try {
-  //     const result=await login({variables:user})
+  const onClick =async (event) => {
+    event.preventDefault();
+    console.log(user);
+    if(!user.username||!user.password){
+      return
+    }
+    try {
+      const result=await login({variables:user})
       
       
-  //   } catch (error) {
+    } catch (error) {
       
-  //   }
-  // };
+    }
+  };
   return (
     <div id="login">
       <div className="login-page bg-light" >
@@ -36,7 +37,7 @@ import "./Login.css";
                 <div className="row">
                   <div className="col-md-7 pe-0">
                     <div className="form-left h-100 py-5 px-5">
-                      <form action="" className="row g-4">
+                      <section className="row g-4">
                         <div className="col-12">
                           <label>
                             Username<span className="text-danger">*</span>
@@ -46,10 +47,11 @@ import "./Login.css";
                               <i className="bi bi-person-fill"></i>
                             </div>
                             <input
-                           
+                           name = "username"
                               type="text"
                               className="form-control"
                               placeholder="Enter Username"
+                              onChange = {onChange}
                             />
                           </div>
                         </div>
@@ -63,9 +65,11 @@ import "./Login.css";
                               <i className="bi bi-lock-fill"></i>
                             </div>
                             <input
+                            name="password"
                               type="text"
                               className="form-control"
                               placeholder="Enter Password"
+                              onChange = {onChange}
                             />
                           </div>
                         </div>
@@ -96,11 +100,12 @@ import "./Login.css";
                           <button
                             type="submit"
                             className="btn btn-primary px-4 float-end mt-4"
+                            onClick={onClick}
                           >
                             Login
                           </button>
                         </div>
-                      </form>
+                      </section>
                     </div>
                   </div>
                 </div>
