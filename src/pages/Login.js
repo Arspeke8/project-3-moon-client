@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {useMutation} from "@apollo/client"
 import { LOGIN_USER } from "../utils/mutation";
+import auth from "../utils/auth";
 
 import "./Login.css";
 
@@ -19,8 +20,8 @@ import "./Login.css";
       return
     }
     try {
-      const result=await login({variables:user})
-      
+      // const result=await login({variables:user})
+      auth.login()
       
     } catch (error) {
       
@@ -28,14 +29,14 @@ import "./Login.css";
   };
   return (
     <div id="login">
-      <div className="login-page bg-light" >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-10 offset-lg-1">
+      <div className="login-page">
+        <div className="">
+          <div className="row justify-content-start">
+            <div className="col-lg-7 offset-lg-1">
               <h3 className="mb-3">Log In</h3>
               <div className="bg-white shadow rounded">
                 <div className="row">
-                  <div className="col-md-7 pe-0">
+                  <div className="col pe-0">
                     <div className="form-left h-100 py-5 px-5">
                       <section className="row g-4">
                         <div className="col-12">

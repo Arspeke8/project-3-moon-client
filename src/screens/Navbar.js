@@ -4,6 +4,8 @@ import Logo from '../assets/images/Logo.png';
 import { Stack } from '@mui/material';
 import { Login } from '../pages/Login';
 import { Signup } from '../pages/Signup';
+import FitnessHistory from '../screens/FitnessHistory';
+// import WorkoutForm from '../screens/WorkoutForm';
 
 export const Navbar = () => (
   <Stack
@@ -29,6 +31,7 @@ export const Navbar = () => (
       fontFamily="Alegreya"
       fontSize="24px"
       alignItems="flex-end"
+      flexWrap="wrap"
     >
       <Link
         to="/"
@@ -46,6 +49,12 @@ export const Navbar = () => (
       <Link to='login' style={{ textDecoration: 'none', color: '#3A1212' }}>
         Login
       </Link>
+      <Link to='fitnesshistory' style={{ textDecoration: 'none', color: '#3A1212' }}>
+       FitnessHistory
+      </Link>
+      {/* <Link to='workoutform' style={{ textDecoration: 'none', color: '#3A1212' }}>
+        WorkoutForm
+      </Link> */}
     </Stack>
   </Stack>
 );

@@ -26,15 +26,16 @@ const FitnessHistory = () => {
 return (
     <div>
         <h1>Fitness History</h1>
-        <button onClick = {()=>{nextWorkout()}}>Next workout</button>
         <h2>{fitnessData[i].name}</h2>
         <ul>
             {fitnessData[i].exercises.map((data, index) => (
                 <li key={index}>
-                    weight: {data.weight}, set: {data.set}, reps: {data.reps}, exercise: {data.exercise}, date: {data.date}
+                     Date: {data.date}, Exercise: {data.exercise}, Set: {data.set}, Reps: {data.reps}, Weight: {data.weight},
                 </li>
+                
             ))}
         </ul>
+        <button onClick = {()=>{nextWorkout()}}>Next Workout</button>
     </div>
     );
 };
