@@ -1,23 +1,26 @@
-body {
-    background-color: #333;
-    color: #ddd;
-    font-family: sans-serif;
-}
-
 h1, h2 {
     text-align: center;
     margin: 20px 0;
-    font-size: 6em;
+    font-size: 3em;
+    width: 70%;
+    border-style: none;
+    margin-top: 50px;
+    margin-left: 100px;
+    flex-wrap: wrap;
 }
 
 button {
-    background-color: #ddd;
-    color: #333;
+    background-color: blue;
+    color: white;
     border-radius: 20px;
     padding: 10px 20px;
     margin: 20px auto;
-    display: block;
-    font-size: 1em;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    
+    
+   
+
 }
 
 ul {
@@ -27,13 +30,29 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:50%;
+    border-style:solid;
+    margin-bottom: 150px;
+    margin-left: 100px;
+    background-color: #D1FAFF;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    
 }
 
 li {
-    background-color: #444;
-    color: #ddd;
+   
+    color: rgb(0, 0, 0);
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    font-size: 3em;
+    font-size: 2em;
+    direction: row;
+    width: 50%;
+    border-style:solid;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-wrap: wrap;
+    
 }

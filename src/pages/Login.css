@@ -7,7 +7,6 @@ a {
     text-decoration: none;
 }
 .login-page {
-    width: 50%;
     height: 100vh;
     display: inline-block;
     display: flex;

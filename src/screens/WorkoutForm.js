@@ -32,7 +32,7 @@ export const WorkoutForm = () => {
     }
 
     return (
-        <form onSubmit={handleFinish}>
+        <form className="workout" onSubmit={handleFinish}>
             <label>Workout Name:</label>
             <input type="text" value={workoutName} onChange={handleWorkoutNameChange} />
             <br />
@@ -53,6 +53,7 @@ export const WorkoutForm = () => {
             ))}
             <button type="button" onClick={handleAddExercise}>Add Exercise</button>
             <button type="submit">Finish</button>
+            
         </form>
     );
 }
