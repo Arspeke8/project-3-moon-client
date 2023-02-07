@@ -20,7 +20,7 @@ export const Signup = () => {
       return
     }
     try {
-      // const result=await signup({variables:user})
+      await signup({variables:user})
       auth.login()
       
     } catch (error) {

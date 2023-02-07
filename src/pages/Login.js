@@ -5,7 +5,7 @@ import auth from "../utils/auth";
 
 import "./Login.css";
 
-   const Login = () => {
+  const Login = () => {
   const [user, setUser] = useState({ username: "", password: "" });
   const [login]= useMutation(LOGIN_USER)
   const onChange = (event) => {
@@ -21,7 +21,8 @@ import "./Login.css";
     }
     try {
       // const result=await login({variables:user})
-      auth.login()
+      // auth.login()
+      auth.login(login.token)
       
     } catch (error) {
       
