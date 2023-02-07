@@ -9,8 +9,10 @@ import { Routes } from 'react-router-dom';
 import  Login  from './pages/Login';
 import { Signup } from './pages/Signup';
 import { Navbar } from './screens/Navbar';
-import FitnessHistory from './screens/FitnessHistory';
 import WorkoutForm from './screens/WorkoutForm';
+import FitnessHistory from './screens/FitnessHistory';
+
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -43,10 +45,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// const client = ApolloClient({
-//   uri:'https://my-server-url.heroku.com/graphql',
-//   cache: new InMemoryCache(),
-// });
+
 
 function App() {
   return (
@@ -60,7 +59,8 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='workoutform' element={<WorkoutForm />} />
-          <Route path='fitnesshistory' element={<FitnessHistory />} />
+          <Route path='/fitnesshistory' element={<FitnessHistory />} />
+        
         </Routes>
         <Footer />
       </Router>

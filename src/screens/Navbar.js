@@ -7,6 +7,8 @@ import { Signup } from '../pages/Signup';
 import FitnessHistory from '../screens/FitnessHistory';
 // import WorkoutForm from '../screens/WorkoutForm';
 
+
+
 export const Navbar = () => (
   <Stack
     direction="row"

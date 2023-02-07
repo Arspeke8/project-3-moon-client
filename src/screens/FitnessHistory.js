@@ -24,11 +24,12 @@ const FitnessHistory = () => {
     }
 
 return (
-    <div>
+    <div className='col-lg-9 col-md-9 col-sm-12'>
         <h1>Fitness History</h1>
         <h2>{fitnessData[i].name}</h2>
         <ul>
             {fitnessData[i].exercises.map((data, index) => (
+              
                 <li key={index}>
                      Date: {data.date}, Exercise: {data.exercise}, Set: {data.set}, Reps: {data.reps}, Weight: {data.weight},
                 </li>
